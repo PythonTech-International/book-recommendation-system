@@ -35,3 +35,19 @@ The value of embeddings was set to 30. The output of such model remained relevan
 ### Value of embedding size, positive ratio, negative ratio
 The value of embedding size was set to 70, n_positive=2048 and n_negative=5. These changes resulted in
 improvement in model in case of loss function and recommendations.
+
+## Early May 2021
+This month we focused on changing the architecture of model and preparing better visualizations.
+
+### Including other parameters such as author or genre
+Changed the implementation of generate_batch function and the way paires were created. After the change these paramters were taking into account also authour and genres. 
+After this change generated graphs looked significantly changes. The model was learning embedings of some books but others stayed in one big cluster.
+
+### Data exploration
+The data provided by wikipedia is highly imperfect for evaluating a proper model. There is missing data, improper symbols, inconsistent formatting etc. 
+
+### Better visualizations
+For better visualizations TensorBoard was used. It provided 3D graphs which allowed us to make better judgements of model embeddings.
+
+## Late May 2021
+...
