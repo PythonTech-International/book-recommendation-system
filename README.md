@@ -41,13 +41,23 @@ This month we focused on changing the architecture of model and preparing better
 
 ### Including other parameters such as author or genre
 Changed the implementation of generate_batch function and the way paires were created. After the change these paramters were taking into account also authour and genres. 
-After this change generated graphs looked significantly changes. The model was learning embedings of some books but others stayed in one big cluster.
+After this change generated graphs looked significantly changes. The model was learning embedings of some books but others stayed in one big cluster with no embedings. 
 
 ### Data exploration
 The data provided by wikipedia is highly imperfect for evaluating a proper model. There is missing data, improper symbols, inconsistent formatting etc. 
+For example: 
+- the number of records without publishing date - 21890 
+- records with only genre and author - 25109
+- records with author, genre, country, language, publishing date - 5020.
 
 ### Better visualizations
 For better visualizations TensorBoard was used. It provided 3D graphs which allowed us to make better judgements of model embeddings.
+
+*Conclusions: Considering more features from the provided dataset improved grouping of similar books further improving book recomendations.
+Projections of embeddings and interactive plots help with evaluating recommender systems although this method is still liable to bias and experimentalist error​.
+The data set is incomplete and further data cleaning might yield better results. 	
+Implementation of methods to evaluate recommendation metrics will provide more concrete evaluation standards​.*
+
 
 ## Late May 2021
 ...
